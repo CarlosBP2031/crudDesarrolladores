@@ -1,0 +1,16 @@
+<form action>
+    <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Correo Electronico</label>
+        <input type="email" class="form-control" id="exampleFormControlInput1" name = "destino" placeholder="Correo de Destino" [(ngModel)]="correo.destino">
+    </div>
+    <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Asunto</label>
+        <input type="email" class="form-control" id="exampleFormControlInput1" name = "asinto" placeholder="Ingresa Tu correo" [(ngModel)]="correo.asunto">
+    </div>
+    <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Cuerpo</label>
+        <input type="email" class="form-control" id="exampleFormControlInput1" name = "body" placeholder="Redacta tu correo Aqui" [(ngModel)]="correo.body">
+    </div>
+    <button type="submit" class="btn btn-primaryuno" (click)="enviarC()">Postularme</button>
+
+</form>

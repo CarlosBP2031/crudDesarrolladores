@@ -1,0 +1,37 @@
+  <div class="container-fluid">
+    <div class="card">
+        <h4 style="text-align: center;">Registros Almacenados en el sistema</h4>
+    </div>
+    <div class="card-body">
+        <table class="table table-dark table-borderless">
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Nombre</th>
+                    <th>Apellido Paterno</th>
+                    <th>Apellido Materno</th>
+                    <th>Celular</th>
+                    <th>Nacimiento</th>
+                    <th>Estatus</th>
+                    <th>Editar</th>
+                    <th>Eliminar</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let d of desarrolladores">
+                    <td>{{d.idDes}}</td>
+                    <td>{{d.nombreDes}}</td>
+                    <td>{{d.appDes}}</td>
+                    <td>{{d.apmDes}}</td>
+                    <td>{{d.numeroDes}}</td>
+                    <td>{{d.fnDes}}</td>
+                    <td>{{d.estatusDes}}</td>
+                    <td><a class="btn btn-outline-warning"> <span class="material-icons" (click)="abrirFormEditar(d)">autorenew</span></a></td>
+                    <td><a class="btn btn-outline-warning"> <span class="material-icons" (click)="abrirFormEliminar(d)">delete_outline</span></a></td>
+
+                </tr>
+            </tbody>
+
+        </table>
+    </div>
+  </div>

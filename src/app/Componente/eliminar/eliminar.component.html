@@ -1,0 +1,53 @@
+
+<div class="container-fluid">
+    <div class="card-head">
+        <h4>Eliminar al  Desarrollador BBVA ?</h4>
+    </div>
+    <div class="card-body">
+        <form>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label" >ID</label>
+              <input type="number" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="idDes" placeholder="Ingrese la Clave Unica" [(ngModel)]="desarrollador.idDes">
+            </div>
+
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Nombre</label>
+                <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="nombreDes" placeholder="Ingrese el Nombre" [(ngModel)]="desarrollador.nombreDes">
+            </div>
+            
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">APP</label>
+                <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="appDes" placeholder="Ingrese el Apellido Paterno" [(ngModel)]="desarrollador.appDes">
+            </div>
+            
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">APM</label>
+                <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="apmDes" placeholder="Ingrese el Apellido Materno" [(ngModel)]="desarrollador.apmDes">
+            </div>
+            
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Celular </label>
+                <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="numeroDes" placeholder="Ingrese el numero de celular" [(ngModel)]="desarrollador.numeroDes">
+            </div>
+            
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Fecha de Nacimiento </label>
+                <input type="date" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="fnDes" placeholder="Ingresa la Fecha d Nacimiento" [(ngModel)]="desarrollador.fnDes">
+            </div>
+
+
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Estatus </label>
+                <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="estatusDes" placeholder="Ingrese el estatus de el Desarrollador" [(ngModel)]="desarrollador.estatusDes">
+            </div>
+
+        
+            <div class="mb-3 form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Check me out</label>
+            </div>
+            <button type="submit" class="btn btn-primary" (click)="eliminar()">Eliminar</button>
+        </form>
+    </div>
+</div>
+
